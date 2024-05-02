@@ -1,0 +1,14 @@
+{
+  "name": "Fouton's Hat in Time AP Tracker",
+  "game_name": "A Hat in Time",
+  "package_version": "1.0",
+  "package_uid": "ahit-fouton",
+  "platform": "pc",
+  "author": "Fouton", //thanks to hoppel for the base
+  "variants": {
+    "standard": {
+      "display_name": "Map Tracker",
+      "flags": "ap"
+    }
+  }
+}

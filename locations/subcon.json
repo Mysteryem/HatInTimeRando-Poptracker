@@ -1,0 +1,875 @@
+[
+  {
+    "name": "Boss Arena Area",
+    "children": [
+      {
+        "name": "Boss Arena Chest",
+        "access_rules": [
+          "$canAccessAct|chapter2_toiletboss",
+          "$canAccessAct|snatcher_boss",
+          "hookshot, paintings_off, $canAccessMainSubcon",
+          "hookshot, paintings_on, yellow, $canAccessMainSubcon",
+          "hard, nobonk, paintings_off, $canAccessMainSubcon",
+          "hard, nobonk, paintings_on, yellow, $canAccessMainSubcon",
+          "expert, paintings_off, $canAccessMainSubcon",
+          "expert, paintings_on, yellow, $canAccessMainSubcon"
+        ],
+        "sections": [
+          {
+            "name": "Yarn"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subcon",
+            "x": 75,
+            "y": 580
+          }
+        ]
+      },
+      {
+        "name": "Boss Arena",
+        "access_rules": [
+          "umbrella_off",
+          "umbrella_on, umbrella"
+        ],
+        "sections": [
+          {
+            "name": "Your Contract has Expired",
+            "access_rules": [
+              "$canAccessAct|snatcher_boss"
+            ]
+          },
+          {
+            "name": "Toilet of Doom",
+            "access_rules": [
+              "hookshot, $canAccessAct|chapter2_toiletboss"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subcon",
+            "x": 190,
+            "y": 520
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Subcon Forest",
+    "access_rules": [
+      "$canAccessMainSubcon"
+    ],
+    "children": [
+      {
+        "name": "Snatcher",
+        "sections": [
+          {
+            "name": "Mail Delivery Service",
+            "access_rules": [
+              "sprint"
+            ]
+          },
+          {
+            "name": "Contracts",
+            "item_count": 4,
+            "clear_as_group": false,
+            "visibility_rules": [
+              "contract"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subcon",
+            "x": 950,
+            "y": 520
+          }
+        ]
+      },
+      {
+        "name": "Badge Seller",
+        "sections": [
+          {
+            "name": "Scammed",
+            "ref": "Shops/Badge Seller/Scammed"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subcon",
+            "x": 1130,
+            "y": 500
+          },
+          {
+            "map": "subcon",
+            "x": 540,
+            "y": 475
+          }
+        ]
+      },
+      {
+        "name": "Giant Mushroom Climb",
+        "sections": [
+          {
+            "name": "Don't Fall~"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subcon",
+            "x": 1123,
+            "y": 455
+          }
+        ]
+      },
+      {
+        "name": "Cherry Bomb Bone Cage",
+        "sections": [
+          {
+            "name": "Yarn",
+            "access_rules": [
+              "$canAccessAct|subcon_village_icewall"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subcon",
+            "x": 785,
+            "y": 640
+          }
+        ]
+      },
+      {
+        "name": "Tree Top Ice Cube",
+        "sections": [
+          {
+            "name": "Yarn"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subcon",
+            "x": 613,
+            "y": 490
+          }
+        ]
+      },
+      {
+        "name": "Graveyard",
+        "sections": [
+          {
+            "name": "Ice Cube"
+          },
+          {
+            "name": "House Top"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subcon",
+            "x": 595,
+            "y": 590
+          }
+        ]
+      },
+      {
+        "name": "Ice Cube House",
+        "sections": [
+          {
+            "name": "Relic"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subcon",
+            "x": 487,
+            "y": 561
+          }
+        ]
+      },
+      {
+        "name": "Stump Platform Chest",
+        "sections": [
+          {
+            "name": "Yarn"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subcon",
+            "x": 440,
+            "y": 500
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Yellow Firewall",
+    "access_rules": [
+      "paintings_off, $canAccessMainSubcon",
+      "paintings_on, yellow, $canAccessMainSubcon",
+      "moderate, nobonk, $canAccessMainSubcon, painting_skips_off",
+      "expert, $canAccessMainSubcon, painting_skips_off"
+    ],
+    "children": [
+      {
+        "name": "Contractual Obligations",
+        "access_rules": [
+          "$canAccessAct|subcon_village_icewall"
+        ],
+        "sections": [
+          {
+            "name": "Time Piece"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subcon",
+            "x": 400,
+            "y": 515
+          }
+        ]
+      },
+      {
+        "name": "Snatcher Statue Chest",
+        "sections": [
+          {
+            "name": "Yarn"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subcon",
+            "x": 400,
+            "y": 460
+          }
+        ]
+      },
+      {
+        "name": "Ice Cube Shack",
+        "sections": [
+          {
+            "name": "Token"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subcon",
+            "x": 1205,
+            "y": 150
+          }
+        ]
+      },
+      {
+        "name": "Swamp Gravestone",
+        "sections": [
+          {
+            "name": "Yarn",
+            "access_rules": [
+              "brewer"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subcon",
+            "x": 1190,
+            "y": 350
+          }
+        ]
+      },
+      {
+        "name": "Swamp Near Well",
+        "sections": [
+          {
+            "name": "Token"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subcon",
+            "x": 1035,
+            "y": 190
+          }
+        ]
+      },
+      {
+        "name": "Swamp Tree A",
+        "sections": [
+          {
+            "name": "Yarn"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subcon",
+            "x": 1000,
+            "y": 210
+          }
+        ]
+      },
+      {
+        "name": "Swamp Tree B",
+        "sections": [
+          {
+            "name": "Yarn"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subcon",
+            "x": 955,
+            "y": 215
+          }
+        ]
+      },
+      {
+        "name": "Swamp Ice Wall",
+        "sections": [
+          {
+            "name": "Yarn"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subcon",
+            "x": 950,
+            "y": 270
+          }
+        ]
+      },
+      {
+        "name": "Swamp Treehouse",
+        "sections": [
+          {
+            "name": "Relic"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subcon",
+            "x": 840,
+            "y": 250
+          }
+        ]
+      },
+      {
+        "name": "Swamp Tree Chest",
+        "sections": [
+          {
+            "name": "Yarn"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subcon",
+            "x": 808,
+            "y": 450
+          }
+        ]
+      },
+      {
+        "name": "Subcon Well",
+        "access_rules": [
+          "moderate, $canAccessAct|subcon_cave",
+          "brewer, $canAccessAct|subcon_cave",
+          "dweller, $canAccessAct|subcon_cave",
+          "umbrella_off, $canAccessAct|subcon_cave",
+          "umbrella_on, umbrella, $canAccessAct|subcon_cave"
+        ],
+        "sections": [
+          {
+            "name": "Hookshot Badge Chest"
+          },
+          {
+            "name": "Above Chest"
+          },
+          {
+            "name": "Mushroom"
+          },
+          {
+            "name": "On Pipe",
+            "access_rules": [
+              "expert",
+              "hookshot"
+            ]
+          },
+          {
+            "name": "Time Piece",
+            "access_rules": [
+              "expert",
+              "hookshot"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subcon",
+            "x": 1045,
+            "y": 133
+          }
+        ]
+      },
+      {
+        "name": "Queen Vanessa's Manor",
+        "access_rules": [
+          "dweller",
+          "brewer",
+          "umbrella_off",
+          "umbrella_on, umbrella",
+          "moderate"
+        ],
+        "sections": [
+          {
+            "name": "Rooftop"
+          },
+          {
+            "name": "Cellar",
+            "access_rules": [
+              "$canAccessAct|vanessa_manor_attic"
+            ]
+          },
+          {
+            "name": "Bedroom Chest",
+            "access_rules": [
+              "$canAccessAct|vanessa_manor_attic"
+            ]
+          },
+          {
+            "name": "Hall Chest",
+            "access_rules": [
+              "$canAccessAct|vanessa_manor_attic"
+            ]
+          },
+          {
+            "name": "Chandelier",
+            "access_rules": [
+              "$canAccessAct|vanessa_manor_attic"
+            ]
+          },
+          {
+            "name": "Time Piece",
+            "access_rules": [
+              "$canAccessAct|vanessa_manor_attic"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subcon",
+            "x": 720,
+            "y": 900
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Blue Firewall",
+    "access_rules": [
+      "paintings_off, $canAccessMainSubcon",
+      "paintings_on, blue, $canAccessMainSubcon",
+      "moderate, nobonk, $canAccessMainSubcon, painting_skips_off",
+      "expert, $canAccessMainSubcon, painting_skips_off"
+    ],
+    "children": [
+      {
+        "name": "Village",
+        "sections": [
+          {
+            "name": "Time Rift",
+            "access_rules": [
+              "expert, $canAccessAct|TimeRift_Water_Subcon_Dwellers",
+              "brewer, $canAccessAct|TimeRift_Water_Subcon_Dwellers",
+              "dweller, $canAccessAct|TimeRift_Water_Subcon_Dwellers",
+              "umbrella, $canAccessAct|TimeRift_Water_Subcon_Dwellers"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subcon",
+            "x": 1600,
+            "y": 700
+          }
+        ]
+      },
+      {
+        "name": "Pipe",
+        "sections": [
+          {
+            "name": "Time Rift",
+            "access_rules": [
+              "hookshot, $canAccessAct|TimeRift_Water_Subcon_Hookshot"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subcon",
+            "x": 888,
+            "y": 750
+          }
+        ]
+      },
+      {
+        "name": "Burning House",
+        "sections": [
+          {
+            "name": "Yarn"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subcon",
+            "x": 1221,
+            "y": 590
+          }
+        ]
+      },
+      {
+        "name": "Burning Tree Climb",
+        "sections": [
+          {
+            "name": "Yarn"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subcon",
+            "x": 1140,
+            "y": 550
+          }
+        ]
+      },
+      {
+        "name": "Burning Stump Chest",
+        "sections": [
+          {
+            "name": "Token"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subcon",
+            "x": 1132,
+            "y": 718
+          }
+        ]
+      },
+      {
+        "name": "Burning Forest Treehouse",
+        "sections": [
+          {
+            "name": "Relic"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subcon",
+            "x": 1272,
+            "y": 685
+          }
+        ]
+      },
+      {
+        "name": "Noose Treehouse",
+        "sections": [
+          {
+            "name": "Relic",
+            "access_rules": [
+              "hookshot",
+              "expert"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subcon",
+            "x": 1005,
+            "y": 630
+          }
+        ]
+      },
+      {
+        "name": "Spider Bone Cage A",
+        "sections": [
+          {
+            "name": "Token"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subcon",
+            "x": 1507,
+            "y": 813
+          }
+        ]
+      },
+      {
+        "name": "Spider Bone Cage B",
+        "sections": [
+          {
+            "name": "Yarn"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subcon",
+            "x": 1067,
+            "y": 625
+          }
+        ]
+      },
+      {
+        "name": "Triple Spider Bounce",
+        "sections": [
+          {
+            "name": "Yarn"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subcon",
+            "x": 1000,
+            "y": 740
+          }
+        ]
+      },
+      {
+        "name": "Infinite Yarn Bush",
+        "sections": [
+          {
+            "name": "Yarn",
+            "access_rules": [
+              "brewer"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subcon",
+            "x": 1060,
+            "y": 790
+          }
+        ]
+      },
+      {
+        "name": "Long Tree Climb Chest",
+        "sections": [
+          {
+            "name": "Yarn",
+            "access_rules": [
+              "expert",
+              "hard, sprint",
+              "dweller"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subcon",
+            "x": 1385,
+            "y": 855
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Green Firewall",
+    "access_rules": [
+      "paintings_off, $canAccessMainSubcon",
+      "paintings_on, green, $canAccessMainSubcon",
+      "moderate, $canAccessMainSubcon, painting_skips_off"
+    ],
+    "children": [
+      {
+        "name": "Sleepy Subcon",
+        "access_rules": [
+          "$canAccessAct|TimeRift_Cave_Raccoon"
+        ],
+        "sections": [
+          {
+            "name": "Time Rift"
+          },
+          {
+            "name": "Pages",
+            "item_count": 9,
+            "clear_as_group": false,
+            "visibility_rules": [
+              "pages"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subcon",
+            "x": 1570,
+            "y": 245
+          }
+        ]
+      },
+      {
+        "name": "Dweller Stump",
+        "sections": [
+          {
+            "name": "Yarn",
+            "access_rules": [
+              "dweller"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subcon",
+            "x": 1278,
+            "y": 415
+          }
+        ]
+      },
+      {
+        "name": "Dweller Floating Rocks",
+        "sections": [
+          {
+            "name": "Token",
+            "access_rules": [
+              "dweller"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subcon",
+            "x": 1420,
+            "y": 455
+          }
+        ]
+      },
+      {
+        "name": "Dweller Platforming Tree A",
+        "sections": [
+          {
+            "name": "Yarn"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subcon",
+            "x": 1405,
+            "y": 295
+          }
+        ]
+      },
+      {
+        "name": "Dweller",
+        "access_rules": [
+          "dweller",
+          "expert"
+        ],
+        "sections": [
+          {
+            "name": "Platforming Tree B"
+          },
+          {
+            "name": "Shack"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subcon",
+            "x": 1523,
+            "y": 510
+          }
+        ]
+      },
+      {
+        "name": "Magnet Badge Bush",
+        "sections": [
+          {
+            "name": "Badge",
+            "access_rules": [
+              "brewer"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subcon",
+            "x": 1595,
+            "y": 635
+          }
+        ]
+      },
+      {
+        "name": "Tall Tree Hookshot Swing",
+        "sections": [
+          {
+            "name": "Yarn",
+            "access_rules": [
+              "expert",
+              "dweller, hookshot"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subcon",
+            "x": 1656,
+            "y": 374
+          }
+        ]
+      },
+      {
+        "name": "Giant Time Piece",
+        "sections": [
+          {
+            "name": "Relic"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subcon",
+            "x": 1540,
+            "y": 240
+          }
+        ]
+      },
+      {
+        "name": "Gallows",
+        "sections": [
+          {
+            "name": "Relic"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subcon",
+            "x": 1440,
+            "y": 100
+          }
+        ]
+      },
+      {
+        "name": "Green and Purple Dweller Rocks",
+        "sections": [
+          {
+            "name": "Yarn"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "subcon",
+            "x": 1355,
+            "y": 85
+          }
+        ]
+      }
+    ]
+  }
+]

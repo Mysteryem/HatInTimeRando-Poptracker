@@ -1,0 +1,499 @@
+[
+  {
+    "name": "Goat Village",
+    "access_rules": [
+      "$canAccessAct|AlpineFreeRoam",
+      "$canAccessAct|AlpineSkyline_Finale"
+    ],
+    "children": [
+      {
+        "name": "Goat Village",
+        "sections": [
+          {
+            "name": "Below Hookpoint"
+          },
+          {
+            "name": "Hidden Branch"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "alpine",
+            "x": 1240,
+            "y": 1250
+          }
+        ]
+      },
+      {
+        "name": "Badge Seller",
+        "sections": [
+          {
+            "name": "Scammed",
+            "ref": "Shops/Badge Seller/Scammed"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "alpine",
+            "x": 1340,
+            "y": 1450
+          }
+        ]
+      },
+      {
+        "name": "Alpine Skyline (Rift)",
+        "access_rules": [
+          "$canAccessAct|TimeRift_Cave_Alps"
+        ],
+        "sections": [
+          {
+            "name": "Time Rift"
+          },
+          {
+            "name": "Pages",
+            "item_count": 5,
+            "clear_as_group": false,
+            "visibility_rules": [
+              "pages"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "alpine",
+            "x": 1450,
+            "y": 1350
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Birdhouse Zipline",
+    "access_rules": [
+      "hookshot, ziplines_off, $canAccessAct|AlpineFreeRoam",
+      "hookshot, ziplines_on, birdzipline, $canAccessAct|AlpineFreeRoam",
+      "hookshot, ziplines_off, $canAccessAct|AlpineSkyline_Finale",
+      "hookshot, ziplines_on, birdzipline, $canAccessAct|AlpineSkyline_Finale"
+    ],
+    "children": [
+      {
+        "name": "Bird Pass Fork",
+        "sections": [
+          {
+            "name": "Yarn"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "alpine",
+            "x": 850,
+            "y": 1260
+          }
+        ]
+      },
+      {
+        "name": "Yellow Band Hills",
+        "access_rules": [
+          "brewer",
+          "moderate"
+        ],
+        "sections": [
+          {
+            "name": "Yarn"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "alpine",
+            "x": 500,
+            "y": 1530
+          }
+        ]
+      },
+      {
+        "name": "Purrloined Village: Horned Stone",
+        "sections": [
+          {
+            "name": "Token"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "alpine",
+            "x": 1050,
+            "y": 940
+          }
+        ]
+      },
+      {
+        "name": "Purrloined Village: Chest Reward",
+        "sections": [
+          {
+            "name": "Token"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "alpine",
+            "x": 845,
+            "y": 970
+          }
+        ]
+      },
+      {
+        "name": "Bird House",
+        "access_rules": [
+          "moderate",
+          "brewer",
+          "$canAccessAct|AlpineFreeRoam"
+        ],
+        "sections": [
+          {
+            "name": "Triple Crow Chest"
+          },
+          {
+            "name": "Dweller Platforms Relic",
+            "access_rules": [
+              "moderate",
+              "dweller"
+            ]
+          },
+          {
+            "name": "Brewing Crate House"
+          },
+          {
+            "name": "Hay Bale"
+          },
+          {
+            "name": "Alpine Crow Mini-Gauntlet"
+          },
+          {
+            "name": "Outer Edge"
+          },
+          {
+            "name": "Time Piece"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "alpine",
+            "x": 194,
+            "y": 1328
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Twilight Bell Zipline",
+    "access_rules": [
+      "hookshot, ziplines_off, $canAccessAct|AlpineFreeRoam",
+      "hookshot, ziplines_on, bellzipline, $canAccessAct|AlpineFreeRoam"
+    ],
+    "children": [
+      {
+        "name": "The Twilight Path",
+        "sections": [
+          {
+            "name": "Token",
+            "access_rules": [
+              "dweller",
+              "expert"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "alpine",
+            "x": 1080,
+            "y": 1745
+          }
+        ]
+      },
+      {
+        "name": "The Twilight Bell (Rift)",
+        "access_rules": [
+          "expert, $canAccessAct|TimeRift_Water_Alp_Goats",
+          "hard, sprint, scooter, $canAccessAct|TimeRift_Water_Alp_Goats",
+          "dweller, $canAccessAct|TimeRift_Water_Alp_Goats"
+        ],
+        "sections": [
+          {
+            "name": "Time Rift"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "alpine",
+            "x": 1230,
+            "y": 2190
+          }
+        ]
+      },
+      {
+        "name": "The Twilight Bell",
+        "access_rules": [
+          "dweller",
+          "expert"
+        ],
+        "sections": [
+          {
+            "name": "Wide Purple Platform"
+          },
+          {
+            "name": "Ice Platform"
+          },
+          {
+            "name": "Time Piece",
+            "access_rules": [
+              "dweller",
+              "brewer, expert",
+              "sprint, expert",
+              "timestop, umbrella_on, umbrella, expert"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "alpine",
+            "x": 1274,
+            "y": 2330
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Lava Cake Zipline",
+    "access_rules": [
+      "hookshot, ziplines_off, $canAccessAct|AlpineFreeRoam",
+      "hookshot, ziplines_on, cakezipline, $canAccessAct|AlpineFreeRoam",
+      "hookshot, ziplines_off, $canAccessAct|AlpineSkyline_Finale",
+      "hookshot, ziplines_on, birdzipline, $canAccessAct|AlpineSkyline_Finale"
+    ],
+    "children": [
+      {
+        "name": "Mystifying Time Mesa: Zipline",
+        "access_rules": [
+          "sprint",
+          "timestop",
+          "hard"
+        ],
+        "sections": [
+          {
+            "name": "Token"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "alpine",
+            "x": 1440,
+            "y": 800
+          }
+        ]
+      },
+      {
+        "name": "Mystifying Time Mesa: Gate Puzzle",
+        "access_rules": [
+          "sprint",
+          "timestop",
+          "hard"
+        ],
+        "sections": [
+          {
+            "name": "Relic"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "alpine",
+            "x": 1200,
+            "y": 320
+          }
+        ]
+      },
+      {
+        "name": "Ember Summit",
+        "sections": [
+          {
+            "name": "Yarn"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "alpine",
+            "x": 1945,
+            "y": 565
+          }
+        ]
+      },
+      {
+        "name": "Lava Cake",
+        "access_rules": [
+          "$canAccessAct|AlpineFreeRoam"
+        ],
+        "sections": [
+          {
+            "name": "Center Fence Cage"
+          },
+          {
+            "name": "Dweller Pillars"
+          },
+          {
+            "name": "Outer Island Chest"
+          },
+          {
+            "name": "Top Cake"
+          },
+          {
+            "name": "Time Piece"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "alpine",
+            "x": 2140,
+            "y": 180
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Windmill Zipline",
+    "access_rules": [
+      "hookshot, ziplines_off, $canAccessAct|AlpineFreeRoam",
+      "hookshot, ziplines_on, windmillzipline, $canAccessAct|AlpineFreeRoam",
+      "hookshot, ziplines_off, $canAccessAct|AlpineSkyline_Finale",
+      "hookshot, ziplines_on, birdzipline, $canAccessAct|AlpineSkyline_Finale"
+    ],
+    "children": [
+      {
+        "name": "Goat Outpost Horn",
+        "sections": [
+          {
+            "name": "Yarn"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "alpine",
+            "x": 1835,
+            "y": 1730
+          }
+        ]
+      },
+      {
+        "name": "Windy Passage",
+        "sections": [
+          {
+            "name": "Yarn"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "alpine",
+            "x": 2390,
+            "y": 1340
+          }
+        ]
+      },
+      {
+        "name": "Curly Tail Trail",
+        "access_rules": [
+          "expert, $canAccessAct|TimeRift_Water_AlpineSkyline_Cats",
+          "hard, sprint, $canAccessAct|TimeRift_Water_AlpineSkyline_Cats",
+          "ice, $canAccessAct|TimeRift_Water_AlpineSkyline_Cats"
+        ],
+        "sections": [
+          {
+            "name": "Time Rift"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "alpine",
+            "x": 2815,
+            "y": 770
+          }
+        ]
+      },
+      {
+        "name": "The Windmill",
+        "access_rules": [
+          "$canAccessAct|AlpineFreeRoam"
+        ],
+        "sections": [
+          {
+            "name": "Entrance"
+          },
+          {
+            "name": "Inside Pon Cluster"
+          },
+          {
+            "name": "Dropdown"
+          },
+          {
+            "name": "House Window"
+          },
+          {
+            "name": "Time Piece"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "alpine",
+            "x": 2830,
+            "y": 1360
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Alpine Skyline",
+    "access_rules": [
+      "hookshot"
+    ],
+    "children": [
+      {
+        "name": "Goat Refinery",
+        "access_rules": [
+          "$canAccessAct|AlpineFreeRoam"
+        ],
+        "sections": [
+          {
+            "name": "Yarn"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "alpine",
+            "x": 1245,
+            "y": 860
+          }
+        ]
+      },
+      {
+        "name": "The Illness has Spread",
+        "access_rules": [
+          "hookshot, ziplines_off, $canAccessAct|AlpineSkyline_Finale",
+          "hookshot, ziplines_on, birdzipline, cakezipline, windmillzipline, $canAccessAct|AlpineSkyline_Finale"
+        ],
+        "sections": [
+          {
+            "name": "Time Piece"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "alpine",
+            "x": 1340,
+            "y": 1320
+          }
+        ]
+      }
+    ]
+  }
+]

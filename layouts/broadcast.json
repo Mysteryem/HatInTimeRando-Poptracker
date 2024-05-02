@@ -1,0 +1,32 @@
+{
+  "tracker_broadcast": {
+    "type": "array",
+    "orientation": "vertical",
+    "margin": "0,0",
+    "content": [
+      {
+        "type": "array",
+        "orientation": "horizontal",
+        "margin": "0,0",
+        "content": [
+          {
+            "type": "layout",
+            "key": "consumable_grid"
+          },
+          {
+            "type": "layout",
+            "key": "item_grid"
+          },
+          {
+            "type": "layout",
+            "key": "ziplines_grid"
+          },
+          {
+            "type": "layout",
+            "key": "tickets_grid"
+          }
+        ]
+      }
+    ]
+  }
+}

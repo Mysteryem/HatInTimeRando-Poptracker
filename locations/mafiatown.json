@@ -1,0 +1,789 @@
+[
+  {
+    "name": "Mafia Town",
+    "access_rules": [
+      "$canAccessChapter|1"
+    ],
+    "children": [
+      {
+        "name": "Welcome to Mafia Town",
+        "access_rules": [
+          "$canAccessAct|chapter1_tutorial"
+        ],
+        "sections": [
+          {
+            "name": "Umbrella"
+          },
+          {
+            "name": "Time Piece"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiatown",
+            "x": 345,
+            "y": 450
+          }
+        ]
+      },
+      {
+        "name": "Barrel Battle",
+        "access_rules": [
+          "$canAccessAct|chapter1_barrelboss"
+        ],
+        "sections": [
+          {
+            "name": "Time Piece"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiatown",
+            "x": 638,
+            "y": 565
+          }
+        ]
+      },
+      {
+        "name": "Mafia HQ",
+        "access_rules": [
+          "$canAccessAct|chapter1_boss"
+        ],
+        "sections": [
+          {
+            "name": "Time Piece"
+          },
+          {
+            "name": "Hallway Brewing Crate",
+            "access_rules": [
+              "brewer"
+            ]
+          },
+          {
+            "name": "Freezer Chest"
+          },
+          {
+            "name": "Secret Room",
+            "access_rules": [
+              "ice"
+            ]
+          },
+          {
+            "name": "Bathroom Stall Chest"
+          },
+          {
+            "name": "Behind HQ Chest",
+            "access_rules": [
+              "$canAccessAct|chapter1_boss",
+              "$canAccessAct|mafiatown_lava",
+              "$canAccessAct|harbor_impossible_race",
+              "$canAccessAct|mafiatown_goldenvault"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiatown",
+            "x": 490,
+            "y": 341
+          }
+        ]
+      },
+      {
+        "name": "Beach Alcove",
+        "sections": [
+          {
+            "name": "Cheating the Race",
+            "access_rules": [
+              "withtimestop, timestop, $canAccessAct|harbor_impossible_race",
+              "withscooter, sprint, scooter, $canAccessAct|harbor_impossible_race",
+              "withsprint, sprint, $canAccessAct|harbor_impossible_race",
+              "withnothing, $canAccessAct|harbor_impossible_race"
+            ]
+          },
+          {
+            "name": "Yarn"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiatown",
+            "x": 250,
+            "y": 430
+          }
+        ]
+      },
+      {
+        "name": "Mafia Geek",
+        "sections": [
+          {
+            "name": "Heating Up Mafia Town",
+            "access_rules": [
+              "umbrella, umbrella_on, $canAccessAct|mafiatown_lava",
+              "umbrella_off, $canAccessAct|mafiatown_lava"
+            ]
+          },
+          {
+            "name": "She Came from Outer Space",
+            "access_rules": [
+              "$canAccessAct|chapter1_cannon_repair"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiatown",
+            "x": 415,
+            "y": 261
+          }
+        ]
+      },
+      {
+        "name": "The Golden Vault",
+        "sections": [
+          {
+            "name": "Time Piece",
+            "access_rules": [
+              "$canAccessAct|mafiatown_goldenvault"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiatown",
+            "x": 465,
+            "y": 368
+          }
+        ]
+      },
+      {
+        "name": "Bazaar",
+        "sections": [
+          {
+            "name": "Time Rift",
+            "access_rules": [
+              "$canAccessAct|TimeRift_Water_Mafia_Hard"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiatown",
+            "x": 370,
+            "y": 510
+          }
+        ]
+      },
+      {
+        "name": "Badge Seller",
+        "sections": [
+          {
+            "name": "Scammed",
+            "ref":"Shops/Badge Seller/Scammed"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiatown",
+            "x": 590,
+            "y": 190
+          }
+        ]
+      },
+      {
+        "name": "Sewers",
+        "sections": [
+          {
+            "name": "Time Rift",
+            "access_rules": [
+              "$canAccessAct|TimeRift_Water_Mafia_Easy"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiatown",
+            "x": 675,
+            "y": 305
+          }
+        ]
+      },
+      {
+        "name": "Mafia of Cooks",
+        "access_rules": [
+          "$canAccessAct|TimeRift_Cave_Mafia"
+        ],
+        "sections": [
+          {
+            "name": "Time Rift"
+          },
+          {
+            "name": "Pages",
+            "item_count": 6,
+            "clear_as_group": false,
+            "visibility_rules": [
+              "pages"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiatown",
+            "x": 250,
+            "y": 150
+          }
+        ]
+      },
+      {
+        "name": "Red Vault",
+        "sections": [
+          {
+            "name": "Yarn"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiatown",
+            "x": 630,
+            "y": 385
+          }
+        ]
+      },
+      {
+        "name": "Dweller Boxes",
+        "sections": [
+          {
+            "name": "Yarn"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiatown",
+            "x": 655,
+            "y": 445
+          }
+        ]
+      },
+      {
+        "name": "Old Man",
+        "access_rules": [
+          "$canAccessChapter|1|chapter1_cannon_repair"
+        ],
+        "sections": [
+          {
+            "name": "Yarn"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiatown",
+            "x": 540,
+            "y": 285
+          }
+        ]
+      },
+      {
+        "name": "Ledge Chest",
+        "sections": [
+          {
+            "name": "Yarn"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiatown",
+            "x": 555,
+            "y": 535
+          }
+        ]
+      },
+      {
+        "name": "Steel Beams",
+        "sections": [
+          {
+            "name": "Nest"
+          },
+          {
+            "name": "Wood Cage",
+            "item_count": 1
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiatown",
+            "x": 510,
+            "y": 255
+          }
+        ]
+      },
+      {
+        "name": "Blue Vault",
+        "sections": [
+          {
+            "name": "Vault"
+          },
+          {
+            "name": "Brewing Crate",
+            "access_rules": [
+              "brewer"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiatown",
+            "x": 460,
+            "y": 525
+          }
+        ]
+      },
+      {
+        "name": "Beneath Scaffolding",
+        "sections": [
+          {
+            "name": "Yarn"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiatown",
+            "x": 450,
+            "y": 260
+          }
+        ]
+      },
+      {
+        "name": "On Scaffolding",
+        "sections": [
+          {
+            "name": "Yarn"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiatown",
+            "x": 390,
+            "y": 250
+          }
+        ]
+      },
+      {
+        "name": "Plaza Under Boxes",
+        "sections": [
+          {
+            "name": "Yarn"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiatown",
+            "x": 435,
+            "y": 480
+          }
+        ]
+      },
+      {
+        "name": "Yellow Sphere Building Chest",
+        "sections": [
+          {
+            "name": "Yarn"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiatown",
+            "x": 540,
+            "y": 110
+          }
+        ]
+      },
+      {
+        "name": "Cargo Ship",
+        "sections": [
+          {
+            "name": "Yarn"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiatown",
+            "x": 691,
+            "y": 41
+          }
+        ]
+      },
+      {
+        "name": "Small Boat",
+        "sections": [
+          {
+            "name": "Yarn"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiatown",
+            "x": 850,
+            "y": 320
+          }
+        ]
+      },
+      {
+        "name": "Above Boats",
+        "access_rules": [
+          "expert",
+          "hookshot",
+          "$canAccessAct|mafiatown_lava",
+          "moderate, ice"
+        ],
+        "sections": [
+          {
+            "name": "Relic"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiatown",
+            "x": 887,
+            "y": 325
+          }
+        ]
+      },
+      {
+        "name": "Staircase Pon Cluster",
+        "sections": [
+          {
+            "name": "Yarn"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiatown",
+            "x": 432,
+            "y": 561
+          }
+        ]
+      },
+      {
+        "name": "Old Man 2",
+        "access_rules": [
+          "$canAccessChapter|1|chapter1_cannon_repair"
+        ],
+        "sections": [
+          {
+            "name": "Seaside Spaghetti"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiatown",
+            "x": 740,
+            "y": 440
+          }
+        ]
+      },
+      {
+        "name": "Palm Tree",
+        "sections": [
+          {
+            "name": "Yarn"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiatown",
+            "x": 245,
+            "y": 55
+          }
+        ]
+      },
+      {
+        "name": "Beach Patio",
+        "sections": [
+          {
+            "name": "Freestanding"
+          },
+          {
+            "name": "Chest"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiatown",
+            "x": 365,
+            "y": 170
+          }
+        ]
+      },
+      {
+        "name": "Top of Ruined Tower",
+        "access_rules": [
+          "moderate",
+          "ice"
+        ],
+        "sections": [
+          {
+            "name": "Yarn"
+          },
+          {
+            "name": "Badge Seller",
+            "ref":"Shops/Badge Seller/Scammed"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiatown",
+            "x": 280,
+            "y": 350
+          }
+        ]
+      },
+      {
+        "name": "Ice Hat Cage",
+        "access_rules": [
+          "ice"
+        ],
+        "sections": [
+          {
+            "name": "Yarn"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiatown",
+            "x": 780,
+            "y": 355
+          }
+        ]
+      },
+      {
+        "name": "Hot Air Balloon",
+        "access_rules": [
+          "ice",
+          "expert"
+        ],
+        "sections": [
+          {
+            "name": "Yarn"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiatown",
+            "x": 545,
+            "y": 670
+          }
+        ]
+      },
+      {
+        "name": "Camera Badge",
+        "sections": [
+          {
+            "name": "smile :)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiatown",
+            "x": 780,
+            "y": 580
+          }
+        ]
+      },
+      {
+        "name": "Camera Badge 2",
+        "sections": [
+          {
+            "name": "smile :)"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiatown",
+            "x": 800,
+            "y": 60
+          }
+        ]
+      },
+      {
+        "name": "Chest Beneath Aqueduct",
+        "sections": [
+          {
+            "name": "Relic"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiatown",
+            "x": 590,
+            "y": 500
+          }
+        ]
+      },
+      {
+        "name": "Secret Cave",
+        "access_rules": [
+          "brewer",
+          "$canAccessAct|mafiatown_lava"
+        ],
+        "sections": [
+          {
+            "name": "Relic"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiatown",
+            "x": 510,
+            "y": 515
+          }
+        ]
+      },
+      {
+        "name": "Crow Chest",
+        "sections": [
+          {
+            "name": "Relic"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiatown",
+            "x": 365,
+            "y": 345
+          }
+        ]
+      },
+      {
+        "name": "Port",
+        "sections": [
+          {
+            "name": "Relic"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiatown",
+            "x": 760,
+            "y": 460
+          }
+        ]
+      },
+      {
+        "name": "Docks Chest",
+        "sections": [
+          {
+            "name": "Relic"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiatown",
+            "x": 273,
+            "y": 630
+          }
+        ]
+      },
+      {
+        "name": "Green Vault",
+        "sections": [
+          {
+            "name": "Token"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiatown",
+            "x": 310,
+            "y": 510
+          }
+        ]
+      },
+      {
+        "name": "Behind Faucet",
+        "sections": [
+          {
+            "name": "Token"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiatown",
+            "x": 310,
+            "y": 670
+          }
+        ]
+      },
+      {
+        "name": "Top of Lighthouse",
+        "access_rules": [
+          "hookshot",
+          "expert"
+        ],
+        "sections": [
+          {
+            "name": "Token"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiatown",
+            "x": 839,
+            "y": 513
+          }
+        ]
+      },
+      {
+        "name": "Hidden Buttons",
+        "sections": [
+          {
+            "name": "Grab a beach ball"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiatown",
+            "x": 270,
+            "y": 230
+          }
+        ]
+      },
+      {
+        "name": "Clock Tower Chest",
+        "access_rules": [
+          "moderate",
+          "hookshot"
+        ],
+        "sections": [
+          {
+            "name": "Token"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiatown",
+            "x": 392,
+            "y": 435
+          }
+        ]
+      },
+      {
+        "name": "Mafia Geek Platform",
+        "access_rules": [
+          "$canAccessChapter|1|chapter1_cannon_repair"
+        ],
+        "sections": [
+          {
+            "name": "Token"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "mafiatown",
+            "x": 410,
+            "y": 150
+          }
+        ]
+      }
+    ]
+  }
+]

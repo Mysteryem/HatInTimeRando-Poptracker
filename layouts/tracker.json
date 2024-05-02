@@ -1,0 +1,139 @@
+{
+  "tracker_default": {
+    "type": "container",
+    "background": "#000000",
+    "content": {
+      "type": "dock",
+      "dropshadow": true,
+      "content": [
+        {
+          "type": "dock",
+          "dock": "bottom",
+          "v_alignment": "stretch",
+          "content": [
+            {
+              "type": "group",
+              "header": "Consumables",
+              "dock": "left",
+              "content": {
+                "type": "layout",
+                "key": "consumable_grid"
+              }
+            },
+            {
+              "type": "group",
+              "header": "Items",
+              "dock": "left",
+              "content": {
+                "type": "layout",
+                "key": "item_grid"
+              }
+            },
+            {
+              "type": "group",
+              "header": "Ziplines",
+              "dock": "left",
+              "content": {
+                "type": "layout",
+                "key": "ziplines_grid"
+              }
+            },
+            {
+              "type": "group",
+              "header": "Tickets",
+              "dock": "left",
+              "content": {
+                "type": "layout",
+                "key": "tickets_grid"
+              }
+            },
+            {
+              "type": "group",
+              "header": "Settings",
+              "dock": "Right",
+              "content": {
+                "type": "layout",
+                "key": "settings_grid"
+              }
+            }
+          ]
+        },
+        {
+          "type": "tabbed",
+          "tabs": [
+            {
+              "title": "Spaceship",
+              "icon": "images/icons/Rumbi.png",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "spaceship"
+                ]
+              }
+            },
+            {
+              "title": "Mafia Town",
+              "icon": "images/icons/Mafia_Goon.png",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "mafiatown"
+                ]
+              }
+            },
+            {
+              "title": "Dead Bird Studio",
+              "icon": "images/icons/Conductor.png",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "deadbirdstudio"
+                ]
+              }
+            },
+            {
+              "title": "Dead Bird Basement",
+              "icon": "images/icons/DJ_Grooves.png",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "basement"
+                ]
+              }
+            },
+            {
+              "title": "Subcon Forest",
+              "icon": "images/icons/Snatcher.png",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "subcon"
+                ]
+              }
+            },
+            {
+              "title": "Alpine Skyline",
+              "icon": "images/icons/Nomad.png",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "alpine"
+                ]
+              }
+            },
+            {
+              "title": "Nyakuza Metro",
+              "icon": "images/icons/Nomad.png",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "nyakuza"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

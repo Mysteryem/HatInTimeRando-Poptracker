@@ -1,0 +1,132 @@
+[
+  {
+    "name": "Spaceship",
+    "children": [
+      {
+        "name": "Rumbi",
+        "sections": [
+          {
+            "name": "Abuse D:",
+            "access_rules": [
+              "timepiece:4, umbrella_off",
+              "timepiece:4, umbrella_on, umbrella"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "spaceship",
+            "x": 690,
+            "y": 470
+          }
+        ]
+      },
+      {
+        "name": "Time's End",
+        "access_rules": [
+          "brewer, dweller, hookshot, $canAccessChapter|5",
+          "brewer, dweller, moderate, $canAccessChapter|5",
+          "ice, dweller, hard, $canAccessChapter|5",
+          "expert, $canAccessChapter|5"
+        ],
+        "sections": [
+          {
+            "name": "Frozen Item"
+          },
+          {
+            "name": "Time Piece"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "spaceship",
+            "x": 675,
+            "y": 640
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Time Rifts",
+    "children": [
+      {
+        "name": "The Gallery",
+        "access_rules": [
+          "brewer, $canAccessAct|Spaceship_WaterRift_Gallery",
+          "moderate, $canAccessAct|Spaceship_WaterRift_Gallery"
+        ],
+        "sections": [
+          {
+            "name": "Time Rift"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "spaceship",
+            "x": 305,
+            "y": 100
+          }
+        ]
+      },
+      {
+        "name": "The Lab",
+        "access_rules": [
+          "dweller, $canAccessAct|Spaceship_WaterRift_MailRoom"
+        ],
+        "sections": [
+          {
+            "name": "Time Rift"
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "spaceship",
+            "x": 589,
+            "y": 999
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Shops",
+    "children": [
+      {
+        "name": "Mafia Boss",
+        "sections": [
+          {
+            "name": "Scammed",
+            "access_rules": [
+              "timepiece:12"
+            ]
+          }
+        ],
+        "map_locations": [
+          {
+            "map": "spaceship",
+            "x": 690,
+            "y": 230
+          }
+        ]
+      },
+      {
+        "name": "Badge Seller",
+        "sections": [
+          {
+            "name": "Scammed",
+            "item_count": 10,
+            "clear_as_group": false,
+            "access_rules": [
+              "$canAccessChapter|1",
+              "$canAccessAct|DeadBirdStudio",
+              "$canAccessMainSubcon",
+              "$canAccessChapter|4",
+              "$canAccessChapter|6"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
